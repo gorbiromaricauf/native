@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.auf.pays"
-    version   = "1.0.6">
+    version   = "1.0.7">
 
 <name>Liste pays</name>
 
@@ -15,11 +15,24 @@ Gor bi romaric
 </author>
 <icon src="veille_logo.png" />
 <icon src="veille_logo.png" gap:platform="android" gap:qualifier="ldpi" />
+<access origin="*" />
+<access origin=".*" />
 <gap:splash src="demarrage_portrait.png" />
 <gap:splash src="demarrage_portrait.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
 <gap:splash src="demarrage_paysage.png" gap:platform="android" gap:qualifier="land-xxhdpi" />
 <gap:splash src="demarrage_paysage.jpg" gap:platform="winphone" />
 <gap:splash src="demarrage_portrait_iphone.png" gap:platform="ios" width="320" height="480" />
-<access origin="*" />
+ 
+
+<gap:config-file platform="android" parent="/manifest">
+    <uses-permission name="android.permission.ACCESS_NETWORK_STATE" />
+</gap:config-file>
+
+<gap:config-file platform="android" parent="/manifest">
+    <uses-permission name="android.permission.INTERNET" />
+</gap:config-file>  
+
+<gap:plugin name="com.simplec.plugins.network" />
+<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
   <feature name="http://api.phonegap.com/1.0/network"/>
 </widget>

@@ -22,11 +22,6 @@ Gor bi romaric
 <gap:splash src="demarrage_paysage.png" gap:platform="android" gap:qualifier="land-xxhdpi" />
 <gap:splash src="demarrage_paysage.jpg" gap:platform="winphone" />
 <gap:splash src="demarrage_portrait_iphone.png" gap:platform="ios" width="320" height="480" />
- 
 
- 
-
-
-<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
   <feature name="http://api.phonegap.com/1.0/network"/>
 </widget>

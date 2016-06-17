@@ -15,7 +15,7 @@ Gor bi romaric
 </author>
 <icon src="veille_logo.png" />
 <icon src="veille_logo.png" gap:platform="android" gap:qualifier="ldpi" />
-<access origin="*" />
+
 <access origin=".*" />
 <gap:splash src="demarrage_portrait.png" />
 <gap:splash src="demarrage_portrait.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
@@ -24,15 +24,6 @@ Gor bi romaric
 <gap:splash src="demarrage_portrait_iphone.png" gap:platform="ios" width="320" height="480" />
  
 
-<gap:config-file platform="android" parent="/manifest">
-    <uses-permission name="android.permission.ACCESS_NETWORK_STATE" />
-</gap:config-file>
 
-<gap:config-file platform="android" parent="/manifest">
-    <uses-permission name="android.permission.INTERNET" />
-</gap:config-file>  
-
-<gap:plugin name="com.simplec.plugins.network" />
-<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
   <feature name="http://api.phonegap.com/1.0/network"/>
 </widget>
